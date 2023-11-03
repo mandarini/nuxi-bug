@@ -6,6 +6,18 @@ This is a repository which contains the following:
 2. A nuxt application (`my-nuxt-app`).
 3. The `nuxt` app contains just a page that says "Hello from Katerina", here is the code: [my-nuxt-app/app.vue](my-nuxt-app/app.vue)
 
+## Install dependencies
+
+```bash
+pnpm i
+```
+
+and in the nuxt app:
+
+```bash
+cd my-nuxt-app && pnpm i
+```
+
 ## The issue
 
 Using `"nuxi": "^3.9.1"` and `runCommand("dev", ["my-nuxt-app"])`, `runCommand` ignores the name of the project (the directory), and runs the command in the root directory.
